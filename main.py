@@ -52,7 +52,7 @@ def menu():
 	bc = int(input("\033[96mEnter Bot Count (Standart=44): \033[93m"))
 	ports = input("\033[96mEnter Ports (Example: 80/443): \033[93m")
 	filename = input("\033[96mEnter File Name (Optional): \033[93m")
-	ports = ports.replace("/", "").split()
+	ports = ports.replace("/", " ").split()
 	ports2 = []
 	for port in ports:
 		ports2.append(int(port))
